@@ -64,7 +64,7 @@ fun ImcScreen(modifier: Modifier = Modifier) {
                 horizontalAlignment = Alignment.CenterHorizontally,
                 modifier = modifier
                     .fillMaxWidth()
-                    .height(160.dp)
+                    .height(180.dp)
                     .background(colorResource(id = R.color.vermelho_fiap))
             ) {
                 Image(
