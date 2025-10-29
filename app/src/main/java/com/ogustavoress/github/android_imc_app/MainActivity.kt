@@ -19,6 +19,7 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.OutlinedTextField
@@ -99,7 +100,7 @@ fun ImcScreen(modifier: Modifier = Modifier) {
                     modifier = Modifier
                         .offset(y = (-30).dp)
                         .fillMaxWidth()
-                        //.height(300.dp),
+                        .height(300.dp),
                     colors = CardDefaults.cardColors(containerColor = Color(0xfff9f6f6)),
                     elevation = CardDefaults.cardElevation(4.dp)
                 ) {
@@ -173,6 +174,7 @@ fun ImcScreen(modifier: Modifier = Modifier) {
                             colors = ButtonDefaults.buttonColors(
                                 containerColor =
                                     colorResource(id = R.color.vermelho_fiap)
+                            )
                         ) {
                             Text(
                                 text = "CALCULAR",
