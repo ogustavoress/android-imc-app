@@ -171,6 +171,7 @@ fun ImcScreen(modifier: Modifier = Modifier) {
                                     altura = altura.value.toDouble(),
                                     peso = peso.value.toDouble()
                                 )
+                                statusImc.value = determinarClassificacaoIMC(imc.value)
                             },
                             modifier = Modifier
                                 .fillMaxWidth()
@@ -215,7 +216,7 @@ fun ImcScreen(modifier: Modifier = Modifier) {
                         fontSize = 14.sp
                     )
                     Text(
-                        text = "Peso Ideal.",
+                        text = statusImc.value,
                         fontWeight = FontWeight.Bold,
                         color = Color.White,
                         fontSize = 20.sp
